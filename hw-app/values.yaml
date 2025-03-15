@@ -1,6 +1,6 @@
 replicaCount: 1
 image:
-  repository: misgav/malamhomework-app
+  repository: 713881821143.dkr.ecr.ap-south-1.amazonaws.com/dev/hw-app
   pullPolicy: IfNotPresent
   tag: latest
 
