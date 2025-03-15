@@ -2,7 +2,7 @@ replicaCount: 1
 image:
   repository: misgav/malamhomework-app
   pullPolicy: IfNotPresent
-  tag: "latest"
+  tag: latest
 
 
 service:
