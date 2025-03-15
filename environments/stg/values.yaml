@@ -3,7 +3,7 @@ replicaCount: 2
 image:
   repository: 713881821143.dkr.ecr.ap-south-1.amazonaws.com/stg/hw-app
   pullPolicy: IfNotPresent
-  tag: "rc-18-320c854"
+  tag: "rc-19-d704025"
 
 service:
   type: ClusterIP
