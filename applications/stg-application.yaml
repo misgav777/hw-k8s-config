@@ -11,11 +11,11 @@ spec:
     path: hw-app
     helm:
       valueFiles:
-        - ../environments/dev/values.yaml
-      releaseName: hw-app-dev
+        - ../environments/stg/values.yaml
+      releaseName: hw-app-staging
   destination:
     server: https://kubernetes.default.svc
-    namespace: dev  
+    namespace: stg  
   syncPolicy:
     automated:
       prune: true

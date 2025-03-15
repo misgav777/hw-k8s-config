@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: hw-app-dev
+  name: hw-app-production
   namespace: argocd
 spec:
   project: default
@@ -11,14 +11,12 @@ spec:
     path: hw-app
     helm:
       valueFiles:
-        - ../environments/dev/values.yaml
-      releaseName: hw-app-dev
+        - ../environments/prd/values.yaml
+      releaseName: hw-app-production
   destination:
     server: https://kubernetes.default.svc
-    namespace: dev  
+    namespace: prd  
   syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
+    automated: {}
     syncOptions:
       - CreateNamespace=true
