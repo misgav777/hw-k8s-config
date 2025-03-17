@@ -4,7 +4,7 @@ replicaCount: 3
 image:
   repository: 713881821143.dkr.ecr.ap-south-1.amazonaws.com/prd/hw-app
   pullPolicy: Always
-  tag: "1.2.11"
+  tag: "1.2.12"
 
 service:
   type: ClusterIP
